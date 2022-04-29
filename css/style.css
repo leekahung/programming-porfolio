@@ -59,7 +59,7 @@ body {
 .home-section {
     width: 100%;
     height: 100vh;
-    padding: 0 150px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -82,6 +82,35 @@ body {
     width: 50%;
     object-fit: cover;
     opacity: 0.4;
+}
+
+.typed-out {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .1em solid black;
+    font-size: 60px;
+    font-weight: 300;
+    width: 0;
+    max-width: max-content;
+    -webkit-animation:
+        typewriter 1s steps(20, end) forwards,
+        blinking-cursor 1s infinite;
+    animation: 
+        typewriter 1s steps(20, end) forwards,
+        blinking-cursor 1s infinite;
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 80%; }
+}
+
+@keyframes blinking-cursor {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
 }
 
 /* About Section */
