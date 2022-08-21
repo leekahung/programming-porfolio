@@ -143,13 +143,12 @@ body {
 }
 
 .about-info {
-    position: relative;
+    display: flex;
+    align-items: center;
     opacity: 0.6;
     font-size: 20px;
     line-height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    
+    text-indent: 40px;
 }
 
 .about-img {
